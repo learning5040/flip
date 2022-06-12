@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+:root{
+    --main-bg-color:#2874f0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: var(--main-bg-color);
+}
+
+.container{
+    min-height:calc(100vh - 58px - 12vh);
+}
+nav{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    padding: 0 25px;
+}
+nav ul{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 58px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    /* color: rgba(29, 29, 220, 0.819); */
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+.search input{
+    width: 320px;
+    height: 29px;
+    border-radius: 2px;
+    margin:0 56px;
+    padding-left: 5px;
+}
+.search img{
+    width: 24px;
+    position: absolute;
+    margin: 0 355px;
+}
+.slider{
+    margin: 12px auto;
+    overflow: hidden;
+    width: 80vw;
+}
+.slider img{
+    height:350px;
+    width: 1200px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.card{
+    margin:auto;
+    max-width: 91vw;
+}
+.card-cricket{
+    width: 12vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card h2{
+    font-family: 'PT Sans', sans-serif ;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
